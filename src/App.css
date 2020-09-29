@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.navColor {
+  background-color: #e8547e !important;
+  width: 100vw;
+}
+
+ul .nav-link {
+  color: white !important;
+}
+
+a.navbar-brand {
+  color: white;
+}
+
+a.logo {
+  color: white;
+  font-size: 2rem;
+}
+
+.navbar-toggler {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='50' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  height: 1.8em;
+}
+
+.head {
+  background-color: black;
+  width: 100% !important;
+  height: 100vh;
+}
+
+
+
+.fas, .fab {
+  padding: 10px;
+  font-size: 2rem;
+  color: #e8547e;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.title {
+  text-align: center;
+  position: relative;
+  bottom: 200px;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.name {
+  height: 87vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.5em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+}
+
+.text {
+  font-size: 1.3rem;
+}
+
+.image {
+  width: 20rem;
+}
+
+
+img.image {
+  display: block;
+  margin: 0 auto;
+}
+
+#article,
+#cats,
+#about,
+#skills,
+#portfolio,
+#contact,
+#downloadBtn {
+  color: #e8547e;
+}
+
+@media (max-width: 767px) {
+  #portfolio, #skills, #about, #contact {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+
+.fa-address-card,
+.fa-laptop-code,
+.fa-code-branch,
+.fa-envelope {
+  font-size: 28px;
+}
+
+@media (max-width: 767px) {
+  .fa-address-card,
+.fa-laptop-code,
+.fa-code-branch,
+.fa-envelope{
+    font-size: 20px;
+  }
+}
+
+.break {
+  background-color: black;
+  height: 50px;
+  width: 100% !important;
+}
+
+.icons {
+  font-size: 5.5rem;
+  width: 100%;
+}
+
+
+
+.btn-color {
+  color: #e8547e !important;
+  background-color: black !important;
+}
+
+.img-padding {
+  padding-bottom: 118px !important;
+}
+
+
+
+p.info {
+  font-size: 1.3rem;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .icons {
+    font-size: 2.7rem;
+  }
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+
+  28%,
+  33% {
+    color: #e8547e;
+    text-shadow: none;
+  }
+
+  82%,
+  97% {
+    color: #e8547e;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #e8547e;
+    text-shadow: none;
+  }
+
+  100% {
+    color: #a14d65;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+}
